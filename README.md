@@ -10,10 +10,8 @@ portable.
 Here is a simple example using 'system.listMethods'. There is another example
 in the class file that uses the 'node.save' method.
 
-<code>
 	<?php
 	$dc =& new DrupalXmlrpcClient('http://example.com/xmlrpc.php');
 	$response = $dc->{'system.listMethods'}()->getResponse();
 	print_r($response);
 	?>
-</code>
